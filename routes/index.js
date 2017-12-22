@@ -160,7 +160,7 @@ function findTestResult(data, dataRandom, adds, title) {
 findTestResult();
 function findCategories(data, adds) {
     router.get("/:category", function (req, res, next) {
-        Adds.findOne({"addNumber": 1}, function (err, add) {
+        Adds.findOne({"addNumber": 2}, function (err, add) {
             if (err) {
                 return res.render('categories', { title: 'script', user: req.session.user, data: data});
             }
