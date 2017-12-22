@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default navbar-fixed-top"  id="nav">
+    <div class="container">
+        <div class="navbar-header">
+
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav social-list">
+                <h4>اسم الموقع<h4>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li data-elem="parallax"><a href="#contact">اقترح فريق</a></li>
+                <li data-elem="about"><a href="/فريق عربي">فريق عربي</a></li>
+                <li data-elem="works"><a href="/برشلونة">برشلونة</a></li>
+
+                <li data-category="ryalmadrid" data-elem=><a href="/ريال مدريد">ريال مدريد</a></li>
+                <li data-elem="contacts"><a href="/">الرئيسية</a></li>
+                {{#if admin}}
+                    <li data-elem=""><a href="/admin/dashboard">لوحة التحكم</a></li>
+                    <li data-elem=""><a href="/admin/logout">تسجيل الخروج </a></li>
+                    <li data-elem=""><a href="/admin/setting">تعديل بياناتي </a></li>
+                {{/if}}
+                {{#if user}}
+                    <img src="{{user.userImage}}"/>
+                {{/if}}
+                <li><a  style="height:50px; margin-left:180px;"href="#" target="_blank"><i class="fa fa-user" title="User" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script src="/javascripts/header.js"></script>

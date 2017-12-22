@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="../stylesheets/login.css"/>
+
+<div class="container container-login">
+    <div class="row ">
+        <div class="container container-fluid form-login">
+            <form id="login-form" method="POST" action="/admin/login">
+                <h1 class="text-center">تسجيل الدخول إلى لوحة التحكم</h1>
+                {{#if error}}
+                    <div class="alert alert-danger">{{error}}</div>
+                {{/if}}
+                <div class="alert alert-danger alarm"></div>
+                <div class="parent-input">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="أدخل الإيميل" class="form-control"/>
+                    </div>
+                </div>
+                <div class="parent-input">
+                    <div class="form-group">
+                        <input type="password" name="password" placeholder="أدخل كلمة المرور" class="form-control"/>
+                    </div>
+                </div>
+                <div class="parent-input">
+                    <div class="form-group">
+                        <input class="btn btn-default btn-block submit-btn" value="دخول" type="submit"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/javascripts/login.js"></script>

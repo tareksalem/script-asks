@@ -1,0 +1,127 @@
+{{#if addTest}}
+    <div class="container-form-add-test">
+        <h1>{{addTest}}</h1>
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{/if}}
+
+        {{#if success}}
+            <div class="alert alert-success">{{success}}</div>
+        {{/if}}
+        <div class="alert alert-danger alarm"></div>
+        <form class="form-add-test" method="post" action="/admin/dashboard/addTest" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>أضف عنوان الاختبار</label>
+                <input type="text" class="form-control" name="testTitle"/>
+            </div>
+            <div class="form-group">
+                <p id="uploadBtn" class="btn btn-primary">أضف صورة للاختبار</p>
+            </div>
+            <div class="form-group ">
+                <input type="file" id="uploadInput" class="form-control input-hidden" name="testImg"/>
+            </div>
+            <div class="form-group">
+                <label>أضف عنوان نتيجة الاختبار</label>
+                <input type="text" class="form-control" name="testResultTitle"/>
+            </div>
+            <div class="form-group">
+                <label>أضف وصف نتيجة الاختبار</label>
+                <textarea type="text" class="form-control test-description" name="testResultDescription"></textarea>
+            </div>
+            <div class="form-group">
+                <label>أضف تصنيف الاختبار</label>
+                <input type="text" class="form-control" name="testCategory"/>
+            </div>
+            <div class="form-group">
+                <input class="btn btn-success" type="submit" value="أضافة الاختبار">
+            </div>
+        </form>
+    </div>
+    <script src="/javascripts/admin.js"></script>
+    <script>
+        validationFor(document.querySelector(".form-add-test"), [document.querySelector(".form-add-test input[name=testTitle]"), document.querySelector(".form-add-test input[name=testResultTitle]"), document.querySelector(".form-add-test textarea[name=testResultDescription]")], "يجب ادخال كافة الحقول");
+        //function to make upload image
+        function uploadImg() {
+            var button = document.querySelector("#uploadBtn")
+            var uploadInput = document.querySelector("#uploadInput");
+            button.addEventListener("click", function () {
+                uploadInput.click();
+            });
+        }
+        uploadImg();
+    </script>
+{{/if}}
+{{#if addAdmin}}
+    <div class="container-form-add-admin">
+        <h1>{{addAdmin}}</h1>
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{/if}}
+
+        {{#if success}}
+            <div class="alert alert-success">{{success}}</div>
+        {{/if}}
+        <div class="alert alert-danger alarm"></div>
+        <form class="form-add-admin" method="post" action="/admin/dashboard/addadmin">
+            <div class="form-group">
+                <label>اسم المستخدم</label>
+                <input type="text" class="form-control" name="username"/>
+            </div>
+            <div class="form-group">
+                <label>الإيميل</label>
+                <input type="email" class="form-control" name="email"/>
+            </div>
+            <div class="form-group">
+                <label>كلمة المرور</label>
+                <input type="password" class="form-control" name="password"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="إضافة مدير" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+    <script src="/javascripts/admin.js"></script>
+    <script>
+        validationFor(document.querySelector(".form-add-admin"), [document.querySelector(".form-add-admin input[name=username]"), document.querySelector(".form-add-admin input[name=email]"), document.querySelector(".form-add-admin input[name=password]")], "يجب ادخال كافة الحقول");
+    </script>
+{{/if}}
+{{#if addAdds}}
+    <div class="container-form-add-admin">
+        <h1>{{addAdds}}</h1>
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{/if}}
+
+        {{#if success}}
+            <div class="alert alert-success">{{success}}</div>
+        {{/if}}
+        <div class="alert alert-danger alarm"></div>
+        <form class="form-add-adds" method="post" action="/admin/dashboard/addadds">
+            <div class="form-group">
+                <label>عنوان الاعلان</label>
+                <input type="text" class="form-control" name="addName"/>
+            </div>
+            <div class="form-group">
+                <label>شفرة الاعلان</label>
+                <textarea type="text" class="form-control test-description" name="addScript"></textarea>
+            </div>
+            <div class="form-group">
+                <label>اختر رقم الاعلان</label>
+                <select name="addNumber" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="إضافة الإعلان" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+    <script src="/javascripts/admin.js"></script>
+    <script>
+        validationFor(document.querySelector(".form-add-adds"), [document.querySelector(".form-add-adds input[name=addName]"), document.querySelector(".form-add-adds textarea[name=addScript]"), document.querySelector(".form-add-admin input[name=password]")], "يجب ادخال كافة الحقول");
+    </script>
+{{/if}}

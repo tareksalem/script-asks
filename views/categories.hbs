@@ -1,0 +1,48 @@
+<header class="clearfix" id="home">
+
+    <div class="banner parallax scroll" id="parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-4 col-md-8 col-sm-12  banner-content">
+                    <h3>اختبارت ترفيهية رياضية</h3>
+                    <h1>
+                        في موقع -----------
+                    </h1>
+                    <h3>انزل اسفل للبدأ باللعب</h3>
+                </div>
+            </div>
+            <div class="row">
+                <img src="http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/scroll_zpsga4ggudw.png" alt="" class="image-responsive center-block scroll-down">
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="clearfix" id="home">
+    <body  data-spy="scroll" data-target="#nav">
+    <section class="works scroll" id="works">
+        <div class="container container-tests">
+            <!--adds-->
+            <div class="page-adds">
+                {{#if add}}
+                    {{{add.addScript}}}
+                {{/if}}
+            </div>
+            <!--end adds-->
+            <div class="row">
+                {{#if data}}
+                    <div id="app" class="container container-indexes">
+                        {{#each data}}
+                            <card data-image="{{this.testImg}}">
+                                <h1 slot="header">{{this.testTitle}}</h1>
+                                <div slot="content" class="container container-indexes">
+                                    <a href="/tests/{{this._id}}" class="button" slot="content" id="button"></a>
+                                </div>
+                            </card>
+                        {{/each}}
+                    </div>
+                {{/if}}
+
+            </div>
+        </div>
+    </section>

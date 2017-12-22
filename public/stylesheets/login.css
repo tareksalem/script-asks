@@ -1,0 +1,35 @@
+body{
+    background-color: #f1f1f1;
+}
+.container-login{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.form-login{
+    width:70%;
+    background-color:white;
+    padding:20px;
+}
+#login-form .parent-input{
+    width:60%;
+    display:block;
+    margin:auto;
+}
+#login-form .parent-input .form-control{
+    padding:25px;
+    background-color: rgba(255, 255, 0, 0.31);
+}
+#login-form .parent-input .submit-btn{
+    background-color: #444444;
+    padding:10px;
+    color:white;
+    width:50%;
+    display:block;
+    margin:auto;
+}
+#login-form .parent-input .submit-btn:hover{
+    background-color: #1f1f1f   ;
+}
+.alarm{
+    visibility:hidden;
+}

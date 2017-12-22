@@ -1,0 +1,12 @@
+.container-admin-layout{
+    margin-top:70px;
+}
+.form-add-test .input-hidden{
+    display:none;
+}
+.form-add-test .test-description{
+    height:120px;
+}
+.alarm{
+    visibility: hidden;
+}

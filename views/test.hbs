@@ -1,0 +1,71 @@
+<link rel="stylesheet" href="/stylesheets/test.css"/>
+<div class="boxyy">
+
+    {{#if data}}
+        <p>{{data.testTitle}}</p>
+        <br>
+        <br>
+
+        <div class="col-lg-6 col-md-6 col-sm-8 col-xs-10 test-image">
+            <img src="/{{data.testImg}}">
+        </div>
+        <div class="Wrapper">
+            {{#if user}}
+                {{#if notResult}}
+                    <div class="Button Button--start">
+                        <button><a href="/tests/result/{{data.id}}">ابدأ الاختبار الأن</a></button>
+                    </div>
+                {{/if}}
+                {{#if testResult}}
+                    <p>{{data.testResultDescription}}</p>
+                {{/if}}
+            {{/if}}
+            {{#if notUser}}
+                <div class="Button Button--start">
+                    <button><a href="/users/auth/facebook/callback">سجل الدخول أولا</a></button>
+                </div>
+            {{/if}}
+    <div>
+        <p>التصنيف</p>
+        <a href="/{{data.testCategory}}">{{data.testCategory}}</a>
+    </div>
+</div>
+
+    {{/if}}
+</div>
+<div class="boxyy1">
+{{#if add}}
+    {{{add.addScript}}}
+{{/if}}
+</div>
+<br>
+<div class="boxyy2">
+    <p>  اختبارات اخرى مقترحة هنا </p>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            {{#if random}}
+                {{#each random}}
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="/{{this.testImg}}" alt="{{this.testTitle}}">
+                            <div class="caption">
+                                <h3>{{this.testTitle}}</h3>
+                                <p><a href="/tests/{{this._id}}" class="btn btn-default">مشاهدة</a></p>
+                            </div>
+                        </div>
+                    </div>
+                {{/each}}
+            {{/if}}
+        </div>
+        <div class="Wrapper">
+            <div class="Button Button--start">
+                <button><span>عرض المزيد..</span></button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

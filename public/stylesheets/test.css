@@ -1,0 +1,346 @@
+body{
+    background: #fff;
+}
+.boxyy {
+    width: 800px;
+    height: 500px;
+    margin: 50px;
+    direction:rtl;
+    text-align: center;
+    font-size: 30px;
+    font-family:cairo;
+    border: 2px solid #ccc;
+    background: #fff;
+    float: left;
+
+}
+
+
+p {
+    background-color: orange;
+}
+.boxyy1 {
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    border: 2px solid #ccc;
+    background: #fff;
+    float: left;
+    direction:rtl;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.boxyy2 {
+    transition: box-shadow .3s;
+    width: 1200px;
+    height: auto;
+    margin: 50px;
+    border: 2px solid #ccc;
+    background: #fff;
+    float: left;
+    direction:rtl;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.Wrapper {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.Button {
+    margin-bottom: 50px;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+}
+.Button.Button--start {
+    width: 180px;
+    height: 60px;
+}
+.Button.Button--start button {
+    border-radius: 4px;
+}
+.Button.Button--start button a{
+    color:white;
+    text-decoration:none;
+}
+.Button.Button--select {
+    width: 60px;
+    height: 60px;
+}
+.Button.Button--select button {
+    border-radius: 50%;
+}
+button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 0px #750014;
+    box-shadow: 0px 0px 0px #750014;
+    background: radial-gradient(ellipse at center, #d60d2e 0%, #c20020 100%);
+    -webkit-transition: -webkit-transform 0.15s, -webkit-box-shadow 0.15s;
+    transition: -webkit-transform 0.15s, -webkit-box-shadow 0.15s;
+    transition: transform 0.15s, box-shadow 0.15s;
+    transition: transform 0.15s, box-shadow 0.15s, -webkit-transform 0.15s, -webkit-box-shadow 0.15s;
+    -webkit-transform: rotateX(0deg) translateY(0);
+    transform: rotateX(0deg) translateY(0);
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+}
+button:hover {
+    -webkit-box-shadow: 0px 5px 0px #750014;
+    box-shadow: 0px 5px 0px #750014;
+    border-radius: 8px;
+    -webkit-transform: rotateX(30deg) translateY(0);
+    transform: rotateX(30deg) translateY(0);
+}
+button:hover:active {
+    text-shadow: 0 0 4px #ad001d;
+    -webkit-box-shadow: 0 1px 0 #423847;
+    box-shadow: 0 1px 0 #423847;
+    background: radial-gradient(ellipse at center, #ff002b 0%, #ed0028 100%);
+    -webkit-transition: -webkit-transform 0.05s, -webkit-box-shadow 0.05s;
+    transition: -webkit-transform 0.05s, -webkit-box-shadow 0.05s;
+    transition: transform 0.05s, box-shadow 0.05s;
+    transition: transform 0.05s, box-shadow 0.05s, -webkit-transform 0.05s, -webkit-box-shadow 0.05s;
+    -webkit-transform: rotateX(30deg) translateY(4px);
+    transform: rotateX(30deg) translateY(4px);
+}
+button span {
+    position: relative;
+    font-size: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+
+
+
+/*global*/
+.navbar-default .navbar-nav > .active > a {
+    background-color: #ccc;
+}
+.navbar-default .navbar-nav > li:hover> a, .navbar-default .navbar-nav > .active:hover > a {
+    background-color: #ffb424;
+}
+.navbar-default .social-list > li:hover> a {
+    color: #ffb424;
+    background: none;
+}
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: cairo;
+}
+h4 {
+    font-size:28px;
+}
+/*global end*/
+
+/*header navbar*/
+nav.navbar {
+    background: #fff;
+    font-family: cairo;
+    font-size: 2.2rem;
+    direction:rtl;
+    margin-right: 00px;
+}
+.scroll-down {
+    margin-top: 3%;
+}
+
+
+/*banner*/
+header .banner {
+    background: url("https://i.pinimg.com/originals/31/ea/4a/31ea4ab09495826302e9b1558aa1b322.jpg") 70% no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 30%;
+    position: relative;
+    z-index: -10;
+}
+.banner-content {
+    color: #fff;
+    font-family: cairo;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 17%;
+}
+.banner-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.banner-content h3 {
+    font-size: 5rem;
+    margin: 5% 0;
+    color: #eeeeee ;
+    font-weight: bold;
+    font-family: cairo;
+}
+/*banner end*/
+
+/*works*/
+.block {
+    box-shadow: 4px 4px 7px #333;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10%;
+
+}
+.works {
+    padding-bottom: 3%;
+    background: #fff;
+}
+.works-thumb {
+    height: 300px;
+
+}
+#work-1 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/twitch_zpscblks89r.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-2 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/weather_zpso9kxmj13.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-3 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/tribute_zpsnwcehwkk.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-4 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/wikisearch_zps7uvspjn1.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-5 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/quote_zpsk9hgyziu.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-6 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/photoblog_zpsvvj8jgc2.jpg") no-repeat 100%;
+    background-size: cover;
+}
+.block::after, .block::before {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.block::after {
+    left: -50%;
+    transition: 0.5s;
+}
+.block::before {
+    right: -50%;
+    transition: 0.5s;
+}
+.block:hover:after {
+    left: 0;
+}
+.block:hover:before {
+    right: 0;
+}
+.works-caption {
+    text-align: center;
+    font-family: cairo;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 10px;
+    display: block;
+    padding: 15px 2px;
+    width: 60%;
+    left: 20%;
+    top:-40%;
+    z-index: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: top 0.5s;
+}
+.block:hover .works-caption {
+    top: 33%;
+}
+.works h2 {
+    margin: 7% 0;
+}
+/*works end*/
+
+
+
+/* media queries */
+@media screen and (min-width: 991px) {
+    header .banner {
+        background-position: center;
+    }
+}
+@media screen and (max-width: 990px) {
+    header .banner-content {
+        text-align: center;
+    }
+    .scroll-down {
+        display: none;
+    }
+    .contacts-data {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    header .banner-content h1 {
+        font-size: 4rem;
+    }
+    header .banner-content h3 {
+        font-size: 2.5rem;
+    }
+    header .social-list {
+        display: none;
+    }
+    .block {
+        width: 65%;
+        margin: 20px auto;
+    }
+    .skills img {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 491px) {
+    header .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    header .banner-content h3 {
+        font-size: 1.5rem;
+    }
+}
+.test-image{
+    height:200px;
+    display:block;
+    margin:auto;
+}
+.test-image img{
+    width:100%;
+    height:100%;
+}
